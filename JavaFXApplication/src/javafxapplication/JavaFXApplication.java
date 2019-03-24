@@ -8,6 +8,7 @@ package javafxapplication;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -23,6 +24,9 @@ public class JavaFXApplication extends Application {
       Button btn = new Button();
       btn.setText("Say 'Hello World'");
       btn.setOnAction((ActionEvent event) -> {
+         Alert msgbox = new Alert(Alert.AlertType.INFORMATION, "Hello again!");
+         msgbox.setHeaderText("Hello World!");
+         msgbox.showAndWait();
          System.out.println("Hello World!");
       });
       
