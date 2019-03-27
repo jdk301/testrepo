@@ -24,7 +24,7 @@ public class JavaFXApplication extends Application {
       Button btn = new Button();
       btn.setText("Say 'Hello World'");
       btn.setOnAction((ActionEvent event) -> {
-         Alert msgbox = new Alert(Alert.AlertType.INFORMATION, "Hello again!");
+         Alert msgbox = new Alert(Alert.AlertType.INFORMATION, "Hello again?");
          msgbox.setHeaderText("Hello World!");
          msgbox.showAndWait();
          System.out.println("Hello World!");
